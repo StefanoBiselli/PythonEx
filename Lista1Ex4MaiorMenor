@@ -1,0 +1,9 @@
+list = []
+numero = 0
+while numero >= 0:
+    numero = int(input("digite um numero "))
+    if numero >= 0:
+      list.append(numero)
+    else:
+      break
+print("maior:",max(list),"e menor:",min(list))
