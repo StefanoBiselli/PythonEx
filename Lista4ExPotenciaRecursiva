@@ -1,0 +1,10 @@
+#   Implemente uma função recursiva para calcular a potência A^N, supondo que tanto A quanto N sejam números
+#   inteiros positivos.
+
+def potencia(a,n):
+    if n == 0:
+        return 1
+    return a*potencia(a,n-1)
+
+a,n = int(input("digite a base e o expoente ")), int(input())
+print(potencia(a,n))
