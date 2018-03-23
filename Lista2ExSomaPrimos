@@ -1,0 +1,26 @@
+def ePrimo(n):
+    div = 0
+    cont = 1
+    while cont <= n:
+        resto = n % cont
+        if resto == 0:
+            div = div + 1
+        cont = cont + 1
+
+    if div == 1 or div == 2:
+        return 'é primo'
+    else:
+        return 'não é primo'
+
+def num(x):
+    contador = 0
+    for i in range(x):
+        n = int(input("Digite um número: "))
+        if ePrimo(n) == 'é primo':
+            contador += n
+    return contador
+
+
+x = int(input("Digite a quantidade de números a serem somados: "))
+
+print("A soma dos primos é:", num(x))
