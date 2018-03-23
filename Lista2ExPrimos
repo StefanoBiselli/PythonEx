@@ -1,0 +1,16 @@
+def ePrimo(n):
+    div = 0
+    cont = 1
+    while cont <= n:
+        resto = n % cont
+        if resto == 0:
+            div = div + 1
+        cont = cont + 1
+
+    if div == 1 or div == 2:
+        return 'é primo'
+    else:
+        return 'não é primo'
+
+n = int(input("digite um numero "))
+print(ePrimo(n))
