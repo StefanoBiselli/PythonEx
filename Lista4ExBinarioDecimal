@@ -1,0 +1,28 @@
+# Iterativa
+def exibeMsg():
+    print("---- Iterativa ----")
+
+def ite(dec):
+    bin = ''
+    while dec != 0:
+        bin = bin + str(dec%2)
+        dec = dec//2
+    return bin[::-1]
+
+exibeMsg()
+dec = int(input("digite o numero na base decimal "))
+print("O valor em decimal será:",ite(dec))
+
+# Recursiva
+def exibeMsg():
+    print("---- Recursiva ----")
+
+def recu(dec):
+    if dec == 0:
+        return ''
+    else:
+        return bin(dec // 2) + str(dec % 2)
+
+exibeMsg()
+dec = int(input("Digite o numero em decimal "))
+print("O valor em decimal será:", recu(dec))
