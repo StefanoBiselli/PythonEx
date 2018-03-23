@@ -1,0 +1,25 @@
+def exibeMsg():
+    print('Esse programa faz a conversão de Fahrenheit para Celsius ou Celsius Para Fahrenheit')
+    return
+
+def calculoFahrenheit():
+    celsius = float(input("Digite a temperatura em Celsius: "))
+    fahrenheit = celsius * 1.8 + 32
+    return fahrenheit
+
+def calculoCelsius():
+    fahrenheit = float(input("Digite a temperatura em Fahrenheit: "))
+    celsius = (fahrenheit - 32) / 1.8
+    return celsius
+
+exibeMsg()
+print("\n")
+
+escolha = input("Para converter de Celsius para Fahrenheit digite F. Para converter de Fahrenheit para Celsius digite C ")
+
+if escolha == 'f'.upper():
+    print("Resultado é: {:.1f}".format(calculoFahrenheit()))
+elif escolha == 'c'.upper():
+    print("Resultado é:", (calculoCelsius()))
+else:
+    print("Inválido","\n")
