@@ -1,0 +1,11 @@
+num1, num2 = int(input("Digite um número inteiro:")), int(input("Digite outro número inteiro:"))
+if num1 > num2:
+  maior = num1
+else:
+  maior = num2
+while True:
+  if num1 % maior == 0 and num2 % maior == 0:
+    print(maior)
+    break
+  else:
+    maior = maior - 1
